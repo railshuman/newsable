@@ -18,7 +18,7 @@
       <tr>
         <td><%= clip.title %></td>
         <td><%= clip.body %></td>
-        <td><%= clip.image %></td>
+        <td><%= image_tag clip.image, width: 200 %></td>
         <td><%= clip.url %></td>
         <td><%= link_to 'Show', clip %></td>
         <td><%= link_to 'Edit', edit_clip_path(clip) %></td>
