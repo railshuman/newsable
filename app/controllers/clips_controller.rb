@@ -25,6 +25,13 @@ class ClipsController < ApplicationController
   # POST /clips.json
   def create
     @clip = Clip.new(clip_params)
+    # @clip.create_meta
+    
+    # meta = MetaInspector.new(@clip.url)
+    # @clip.title = meta.title
+    # @clip.body = meta.description
+    # @clip.image = meta.images.best
+    # raise @clip.inspect
 
     respond_to do |format|
       if @clip.save
